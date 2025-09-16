@@ -1,15 +1,15 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.8"
+    "bootstrap": "^5.3.8",
+    "sass": "^1.92.1"
   },
   "name": "alwaysinsight",
   "version": "1.0.0",
   "description": "photo archive site",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass:build" : "sass scss:css" 
+    "fa_un_css": "sass scss:css"
   },
   "author": "Catinca Lazar",
   "license": "MIT"
