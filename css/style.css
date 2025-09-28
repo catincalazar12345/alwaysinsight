@@ -1,5 +1,58 @@
-body {
-  color: red;
+html, body {
+  height: 100%;        
+  min-height: 100vh;   
 }
 
-/*# sourceMappingURL=style.css.map */
+body {
+  display: flex;
+  height: 100%;
+  background: url("/pictures/image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #333;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;                        
+  background: rgba(0,0,0,0.5);      
+  z-index: 0;                      
+}
+.cover-container
+{
+  z-index: 0;
+}
+
+.logo-text
+{
+  font-size: 50px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-link
+{
+  color: #fff !important;
+  border-bottom: .25rem solid transparent;
+  transition: border-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.nav-link::hover,
+.nav-link::focus
+{
+  border-bottom-color: rgba(255,255,255,.5);
+}
+
+.main-text{
+  justify-content: center;
+  align-items:center;
+  flex: 1;
+}
+
+.para
+{
+  height: 50px;
+  width: 1000px;
+}
