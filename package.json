@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fa_un_css": "sass scss:css"
+    "compile_css": "sass scss:css"
   },
   "author": "Catinca Lazar",
   "license": "MIT"
