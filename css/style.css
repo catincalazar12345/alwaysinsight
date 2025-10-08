@@ -1,62 +1,14 @@
-html, body {
-  height: 100%;        
-  min-height: 100vh;   
+@media (max-width: 767.98px) {
+  body {
+    display: flex;
+    height: 100%;
+    background: url("/pictures/portrait.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #333;
+    position: relative;
+  }
 }
 
-body {
-  display: flex;
-  height: 100%;
-  background: url("/pictures/landscape.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #333;
-  position: relative;
-}
-
-body::before {
-  content: "";
-  position: absolute;
-  inset: 0;                        
-  background: rgba(0,0,0,0.5);      
-  z-index: 0;                      
-}
-.cover-container
-{
-  z-index: 0;
-  justify-content: space-between;
-}
-
-.bg-image
-{
-  width: 100%;
-  height: auto;
-  z-index: -1;
-}
-
-.logo-text
-{
-  font-size: 50px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #fff !important;
-}
-
-.nav-link
-{
-  color: #fff !important;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-link::hover,
-.nav-link::focus
-{
-  border-bottom-color: rgba(255,255,255,.5);
-}
-
-.main-text{
-  justify-content: center;
-  align-items:center;
-}
-
-
-
+/*# sourceMappingURL=style.css.map */
