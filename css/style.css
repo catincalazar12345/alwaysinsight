@@ -65,7 +65,14 @@ body::before {
 }
 
 .header-div{
+  display:flex;
   justify-content:space-between;
+}
+
+.container-fluid{
+  text-align: right;
+  display: flex;
+  flex-direction: column;
 }
 
 
