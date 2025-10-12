@@ -24,7 +24,7 @@ body::before {
 .cover-container
 {
   z-index: 0;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .bg-image
@@ -69,20 +69,24 @@ body::before {
   justify-content:space-between;
 }
 
+header{
+  height: 45%;
+  width: auto;
+}
+
 .container-fluid{
   text-align: right;
   display: flex;
   flex-direction: column;
+  color:#fff !important
 }
-
-
 
 
 @media (max-width: 767.98px) {
   body {
     display: flex;
     height: 100%;
-    background: url("/pictures/portrait.jpg");
+    background: url("/pictures/portrait2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
