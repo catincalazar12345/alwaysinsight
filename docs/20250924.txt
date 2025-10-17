@@ -1,0 +1,26 @@
+20250924
+
+Homepage - single photo
+https://www.sebastiansardi.com/index.php/works/ , text in mijloc + meniu dreapta sus 
+Meniu: About; Portfolio; Projects; Us
+/alwaysinsight
+: index.html
+/about 
+/portfolio etc
+(directoare separate)
+
+de cautat display in bootstrap (meniu, text, imagine fundal)
+de facut index.html cu homepage 
+poza scalata fully
+
+Projects https://www.alessandrozanoni.com/places/ 
+Fiecare reportaj - o imagine, un titlu
+Portfolio (fiecare reportaj)
+
+P1 ; 
+img mare, text
+Header: imagine + text (2/3 + 1/3 din width)
+	1/2 vh height 
+Section 2: poze (reference below), cu scroll
+
+https://www.mariosforsos.com/travel/benin-1 - referinta
