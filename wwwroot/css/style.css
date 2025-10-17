@@ -78,7 +78,8 @@ header{
   text-align: right;
   display: flex;
   flex-direction: column;
-  color:#fff !important
+  color:#fff !important;
+  width: 85px !important;
 }
 
 
