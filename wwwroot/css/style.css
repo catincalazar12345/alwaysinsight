@@ -1,3 +1,4 @@
+
 html, body {
   height: 100%;        
   min-height: 100vh;   
@@ -6,7 +7,7 @@ html, body {
 body {
   display: flex;
   height: 100%;
-  background: url("/pictures/landscape.jpg");
+  background: url("/wwwroot/pictures/landscape.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,22 +65,23 @@ body::before {
   align-items:center;
 }
 
+header{
+  height: 45%;
+  width: auto;    
+}
+
 .header-div{
-  display:flex;
+   display:flex;
   justify-content:space-between;
 }
 
-header{
-  height: 45%;
-  width: auto;
-}
-
-.container-fluid{
+.container{
   text-align: right;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   flex-direction: column;
   color:#fff !important;
-  width: 85px !important;
 }
 
 
@@ -87,7 +89,7 @@ header{
   body {
     display: flex;
     height: 100%;
-    background: url("/pictures/portrait2.jpg");
+    background: url("/wwwroot/pictures/portrait2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,6 +97,15 @@ header{
     position: relative;
   }
 
+  .container{
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+  color:#fff !important;
+  width: 85px !important;
+}
 
 }
 body::before {
