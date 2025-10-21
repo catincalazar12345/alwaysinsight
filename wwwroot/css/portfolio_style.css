@@ -1,8 +1,43 @@
-.cover-container{
-    width:100%;  
+html, body {
+  height: 100%;        
+  min-height: 100vh;   
+}
+header{
+  height: 45%;
+  width: auto;    
+}
+.header-div{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-img
+{
+  max-width: 50px;
+  height: auto;
+}
+.nav-link
+{
+  color: black;
+  border-bottom: .25rem solid transparent;
+}
+body {
+  display: flex;
+  height: 100%;
 }
 
-header{
-    height: 50vh;
-    background-color:green;
+.cover-container{
+  z-index: 0;
+  justify-content: flex-start;
+  width:100%;  
+}
+
+.container{
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
+  color:#fff !important;
+  width: 85px;
 }
