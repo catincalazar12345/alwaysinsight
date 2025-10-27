@@ -10,6 +10,7 @@ header{
 .header-div{
    display:flex;
   justify-content:space-between;
+  height: 20vh;
 }
 .logo-img
 {
@@ -42,16 +43,15 @@ body {
   width: 85px;
 }
 .content{
-
   padding:5px;
-  gap:20px;
 }
-.content div
+.block
 {
   border: 1px solid black;
   font-size: 30px;
   text-align: center;
-
+  height: 350px;
+  /* width: 250px;  */
 }
 
 @media (max-width: 767.98px) {
