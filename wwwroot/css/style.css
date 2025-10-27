@@ -81,7 +81,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   flex-direction: column;
-  color:#fff !important;
+  color:#000 !important;
 }
 
 
