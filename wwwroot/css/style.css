@@ -51,13 +51,6 @@ body::before {
 .nav-link
 {
   color: #fff !important;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-link::hover,
-.nav-link::focus
-{
-  border-bottom-color: rgba(255,255,255,.5);
 }
 
 .main-text{
@@ -71,7 +64,7 @@ header{
 }
 
 .header-div{
-   display:flex;
+  display:flex;
   justify-content:space-between;
 }
 
