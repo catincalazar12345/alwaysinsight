@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;        
+  min-height: 100vh;   
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  display:flex;
+  justify-content:space-between;
+  z-index:0;
+  background-color: green;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .back-button{
+    z-index:10;
+    margin:20px;
+    background-color: peachpuff;
+    height:30px;
+    width:30px;
+} */
+
+
