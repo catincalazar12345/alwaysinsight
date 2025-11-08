@@ -5,14 +5,50 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+.container{
+    margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .header{
   display:flex;
   justify-content:space-between;
   z-index:0;
-  background-color: green;
   margin:0;
   padding: 0;
   box-sizing: border-box;
+  height: 50vh;
+}
+.img-div{
+    flex:2;
+    height:100%;
+}
+.img-div img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    display: block;
+    /* mask-image: linear-gradient(to right,#000, rgba(0,0,0,0));  */
+} 
+.text-div{
+    flex:1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.block
+{
+  border: 1px solid black;
+  font-size: 30px;
+  text-align: center;
+  height: 300px;
+}
+.content{
+    margin-top: 100px;
+    margin-left: 10px;
 }
 /* .back-button{
     z-index:10;
