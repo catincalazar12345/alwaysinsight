@@ -14,6 +14,26 @@ body {
   background-color: #333;
   position: relative;
 }
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pop-text {
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.pop-text:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
 
 body::before {
   content: "";
