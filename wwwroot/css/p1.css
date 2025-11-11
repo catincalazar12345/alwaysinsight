@@ -5,11 +5,21 @@ html, body {
   padding: 0;
   box-sizing: border-box;
 }
+.logo-img
+{
+  max-width: 50px;
+  height: auto;
+}
+.header-div{
+    display: flex;
+    justify-content: space-between;
+}
 .container{
     margin:0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .header{
   display:flex;
   justify-content:space-between;
@@ -28,7 +38,6 @@ html, body {
     height:100%;
     object-fit: cover;
     display: block;
-    /* mask-image: linear-gradient(to right,#000, rgba(0,0,0,0));  */
 } 
 .text-div{
     flex:1;
@@ -38,6 +47,7 @@ html, body {
     display: flex;
     flex-direction: column;
     margin: 20px;
+    font-size: 1vw;
 }
 .block
 {
@@ -49,6 +59,20 @@ html, body {
 .content{
     margin-top: 100px;
     margin-left: 10px;
+}
+
+@media (max-width: 767.98px) {
+
+.text-div{
+    flex:1;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-size: 2vw;
+}
 }
 /* .back-button{
     z-index:10;
