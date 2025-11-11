@@ -49,18 +49,31 @@ html, body {
     margin: 20px;
     font-size: 1vw;
 }
-.block
-{
-  border: 1px solid black;
-  font-size: 30px;
-  text-align: center;
-  height: 300px;
-}
 .content{
     margin-top: 100px;
     margin-left: 10px;
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px;
+  grid-gap: 5px;
+  grid-auto-flow: dense;
 }
 
+.content img {
+   width: 100%;
+   height: 100%;
+}
+
+.horizontal{
+    grid-column: span 2;
+}
+.vertical {
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
 @media (max-width: 767.98px) {
 
 .text-div{
