@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportaj</title>
-    <link rel="stylesheet" href="../../wwwroot/css/p1.css">
+    <link rel="stylesheet" href="../../wwwroot/css/p2.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -14,7 +14,7 @@
     <div class="cover-container mx-auto d-flex flex-column p-3 h-100 w-100">
     <header>
         <div class="header-div d-flex">
-                <a class="logo-text float-md-start" aria-current="page" href="../index.html" target="_blank">
+                <a class="logo-text float-md-start" aria-current="page" href="../index.html">
                     <img src="../../wwwroot/pictures/logo.png" class="logo-img" />
                 </a>
                 <nav class="navbar nav-underline navbar-expand-md justify-content-center float-md-end">
@@ -38,7 +38,7 @@
     </header>
     <div class="header">
         <div class="img-div">
-            <img src="../../wwwroot/pictures/pushkin.jpg" \img>
+            <img src="../../wwwroot/pictures/p2_pictures/pic1.jpeg" \img>
         </div>
         <div class="text-div">
             <h2> TITLE</h2>
@@ -59,32 +59,28 @@
         </div>
     </div>
     <div class="content">
-        <div class="big">
-            <img src="../../wwwroot/pictures/square_iris.jpg" data-index="0" \img>
-        </div>
-        <div class="vertical">
-            <img src="../../wwwroot/pictures/portrait_catinca.jpg" data-index="1" \img>
-        </div>
-        <div class="normal">
-            <img src="../../wwwroot/pictures/pushkin.jpg" data-index="2" \img>
-        </div>
-        <div class="horizontal">
-            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="3" \img>
-        </div>
-        <div class="horizontal">
-            <img src="../../wwwroot/pictures/landscape_iuliacatinca.jpg" data-index="4" \img>
-        </div>
-        <div class="normal">
-            <img src="../../wwwroot/pictures/portrait2.jpg" data-index="5" \img>
-        </div>
-        <div class="horizontal">
-            <img src="../../wwwroot/pictures/landscape_p1.jpg" data-index="6" \img>
-        </div>
-        <div class="vertical">
-            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="7" \img>
-        </div>
-        <div class="normal">
-            <img src="../../wwwroot/pictures/portrait.jpg" data-index="8" \img>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic2.jpeg" data-index="0" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic1.jpeg" data-index="1" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic3.jpeg" data-index="2" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic4.jpeg" data-index="3" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic5.jpeg" data-index="4" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic6.jpeg" data-index="5" class="img-fluid" \img>
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="../../wwwroot/pictures/p2_pictures/pic7.jpeg" data-index="6" class="img-fluid" \img>
+            </div>
         </div>
     </div>
     <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Photo gallery" aria-hidden="true">
@@ -93,19 +89,18 @@
                 <div class="modal-body p-0 position-relative">
                     <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner"></div>
-                         <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                    </button>
-                    </div>
+                        </button>
                 </div>
             </div>
         </div>
-           
     </div>
 </div>
 <script defer src="../../wwwroot/js/p1-gallery.js"></script>
