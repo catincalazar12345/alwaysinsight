@@ -2,6 +2,7 @@
   "dependencies": {
     "bootstrap": "^5.3.8",
     "jquery": "^3.7.1",
+    "masonry-layout": "^4.2.2",
     "sass": "^1.92.1"
   },
   "name": "alwaysinsight",
