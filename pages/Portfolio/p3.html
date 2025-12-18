@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../wwwroot/css/p1.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/browse/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -58,7 +60,7 @@
             </p>
         </div>
     </div>
-    <div class="content">
+    <!-- <div class="content">
         <div class="big">
             <img src="../../wwwroot/pictures/square_iris.jpg" data-index="0" \img>
         </div>
@@ -86,9 +88,19 @@
         <div class="normal">
             <img src="../../wwwroot/pictures/portrait.jpg" data-index="8" \img>
         </div>
+    </div> -->
+    <div class="grid">
+
+        <div class="grid-item">Item 1</div>
+
+        <div class="grid-item">Item 2</div>
+
+        <div class="grid-item">Item 3</div>
+
     </div>
+
     
-    <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Photo gallery" aria-hidden="true">
+    <!-- <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Photo gallery" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark">
                 <div class="modal-body p-0 position-relative">
@@ -107,8 +119,14 @@
             </div>
         </div>
            
-    </div>
+    </div> -->
 </div>
-<script defer src="../../wwwroot/js/p1-gallery.js"></script>
+<!-- <script defer src="../../wwwroot/js/p1-gallery.js"> -->
+<script>
+    $('.grid').masonry({
+    itemSelector: '.grid-item'
+    });
+</script>
 </body>
+
 </html>

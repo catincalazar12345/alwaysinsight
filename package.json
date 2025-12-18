@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
     "sass": "^1.92.1"
   },
   "name": "alwaysinsight",
@@ -8,7 +9,7 @@
   "description": "photo archive site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"   
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Catinca Lazar",
   "license": "MIT"
