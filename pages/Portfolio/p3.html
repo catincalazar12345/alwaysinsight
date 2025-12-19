@@ -5,9 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reportaj</title>
+    <link rel="stylesheet" href="../../wwwroot/css/MsonryGridImages.css">
     <link rel="stylesheet" href="../../wwwroot/css/p1.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/browse/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+       <script src="../../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -47,18 +51,15 @@
                 ultricies.
                 Duis blandit, justo id laoreet hendrerit, mauris mi volutpat mauris, vitae tincidunt velit libero mattis
                 libero. Fusce nec orci vel sapien fermentum fermentum quis in mi. In vitae iaculis quam. Sed vehicula
-                rutrum
-                dictum. Integer consequat gravida cursus. Pellentesque aliquam nec enim et mattis. Suspendisse posuere
+                rutrum dictum. Integer consequat gravida cursus. Pellentesque aliquam nec enim et mattis. Suspendisse posuere
                 sapien dui. Mauris vestibulum magna nec lacus facilisis porttitor vitae ac velit. Maecenas commodo,
-                risus
-                sit amet viverra pharetra, purus sem imperdiet odio, nec consectetur nisi orci sit amet tellus.
+                risus sit amet viverra pharetra, purus sem imperdiet odio, nec consectetur nisi orci sit amet tellus.
                 Pellentesque in ipsum turpis. Mauris eleifend, leo a sodales dictum, turpis felis sagittis augue, a
-                varius
-                est nunc eget urna. Nunc tempus commodo sapien ullamcorper venenatis.
+                varius est nunc eget urna. Nunc tempus commodo sapien ullamcorper venenatis.
             </p>
         </div>
     </div>
-    <div class="content">
+    <!-- <div class="content">
         <div class="big">
             <img src="../../wwwroot/pictures/square_iris.jpg" data-index="0" \img>
         </div>
@@ -86,8 +87,102 @@
         <div class="normal">
             <img src="../../wwwroot/pictures/portrait.jpg" data-index="8" \img>
         </div>
+    </div> -->
+
+
+    <div class="grid">
+
+        <div class="grid-sizer"></div>
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="1" class="grid-item grid-item--hight-double">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item ">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item grid-item--wide">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/landscape_p1.jpg" data-index="1" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait2.jpg" data-index="2" class="grid-item grid-item--wide">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/portrait2.jpg" data-index="1" class="grid-item grid-item--hight-double">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="1" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="1" class="grid-item grid-item--hight-double">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item ">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item grid-item--wide">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/landscape_p1.jpg" data-index="1" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait2.jpg" data-index="2" class="grid-item grid-item--wide">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/portrait2.jpg" data-index="1" class="grid-item grid-item--hight-double">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item">
+        </div>
+
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>
+        <div >
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="1" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/landscape_ocean.jpg" data-index="2" class="grid-item">
+        </div>
+
+        <div>
+            <img src="../../wwwroot/pictures/portrait_ocean.jpg" data-index="3" class="grid-item">
+        </div>        
     </div>
-    
     <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Photo gallery" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content bg-dark">
@@ -109,6 +204,18 @@
            
     </div>
 </div>
-<script defer src="../../wwwroot/js/p1-gallery.js"></script>
+
+
+
+
+    <script defer src="../../wwwroot/js/p1-gallery.js"></script>
+    <script>
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+             percentPosition: true 
+        })
+    </script>
 </body>
+
 </html>

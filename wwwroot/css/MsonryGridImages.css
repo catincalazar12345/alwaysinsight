@@ -1,0 +1,18 @@
+.grid-item{
+    object-fit: cover;
+}
+
+.grid-sizer,
+.grid-item{
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+
+.grid-item--wide{
+    width: 40%;
+}
+
+.grid-item--hight-double{
+    height: 600px;
+}
