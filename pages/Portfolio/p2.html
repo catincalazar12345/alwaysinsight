@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../../wwwroot/css/p2.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 </head>
 
 <body>
@@ -58,30 +60,32 @@
             </p>
         </div>
     </div>
-    <div class="content">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic2.jpeg" data-index="0" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic1.jpeg" data-index="1" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic3.jpeg" data-index="2" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic4.jpeg" data-index="3" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic5.jpeg" data-index="4" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic6.jpeg" data-index="5" class="img-fluid" \img>
-            </div>
-            <div class="col-12 col-md-6">
-                <img src="../../wwwroot/pictures/p2_pictures/pic7.jpeg" data-index="6" class="img-fluid" \img>
-            </div>
+    <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="grid-item">
+            <img src="../../wwwroot/pictures/p2_pictures/pic2.jpeg" data-index="0" alt="">
         </div>
+        <div class="grid-item grid-item--portrait">
+            <img src="../../wwwroot/pictures/p2_pictures/pic1.jpeg" data-index="1" alt="">
+        </div>
+        <div class="grid-item grid-item--landscape">
+            <img src="../../wwwroot/pictures/p2_pictures/pic3.jpeg" data-index="2" alt="">
+        </div>
+        <div class="grid-item grid-item--portrait">
+            <img src="../../wwwroot/pictures/p2_pictures/pic4.jpeg" data-index="3" alt="">
+        </div>
+        <div class="grid-item grid-item--landscape">
+            <img src="../../wwwroot/pictures/p2_pictures/pic5.jpeg" data-index="4" alt="">
+        </div>
+        <div class="grid-item">
+            <img src="../../wwwroot/pictures/p2_pictures/pic6.jpeg" data-index="5" alt="">
+        </div>
+        <div class="grid-item grid-item--portrait">
+            <img src="../../wwwroot/pictures/p2_pictures/pic7.jpeg" data-index="6" alt="">
+        </div>
+            <div class="grid-item grid-item--landscape">
+            <img src="../../wwwroot/pictures/p2_pictures/pic5.jpeg" data-index="4" alt="">
+        </div>  
     </div>
     <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Photo gallery" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -104,6 +108,33 @@
     </div>
 </div>
 <script defer src="../../wwwroot/js/p1-gallery.js"></script>
+ <!-- <script>
+    (function () {
+        function initMasonry() {
+            var grid = document.querySelector('.grid');
+            if (!grid || typeof Masonry === 'undefined') return;
+
+            var msnry = new Masonry(grid, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+
+            var imgs = grid.querySelectorAll('img');
+            var relayout = function () { msnry.layout(); };
+            imgs.forEach(function (img) {
+                if (img.complete) return;
+                img.addEventListener('load', relayout, { once: true });
+                img.addEventListener('error', relayout, { once: true });
+            });
+
+            relayout();
+        }
+
+        if (document.readyState === 'complete') initMasonry();
+        else window.addEventListener('load', initMasonry, { once: true });
+    })();
+</script> -->
 </body>
 
 </html>
